@@ -23,7 +23,7 @@ class alinearTexto : AppCompatActivity() {
 
 
     }
-
+//
 
     fun alinearTextoDerecha(view: View){
 
