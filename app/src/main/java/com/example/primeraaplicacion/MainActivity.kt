@@ -1,6 +1,7 @@
 package com.example.primeraaplicacion
 
 import android.content.Intent
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,12 +15,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var toolbar = findViewById <Toolbar> (R.id.barraTareas);
-        toolbar.inflateMenu(R.menu.menuopcion);
+
 
     }
-//
+
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+
+
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menuopcion, menu)
         return true
