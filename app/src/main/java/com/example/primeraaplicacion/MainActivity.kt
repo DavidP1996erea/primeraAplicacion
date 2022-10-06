@@ -3,19 +3,53 @@ package com.example.primeraaplicacion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
+import android.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var toolbar = findViewById <Toolbar> (R.id.barraTareas);
+        toolbar.inflateMenu(R.menu.menuopcion);
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menuopcion, menu)
+        return true
     }
 
 
 
-    fun sumaNumeros( view: View){
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        return when (item.itemId) {
+            R.id.ejercicioSumar -> {
+                sumarNumeros(null)
+                true
+            }
+            R.id.ejercicioColores -> {
+                cambiarColoresTexto(null)
+                true
+            }
+            R.id.ejercicioTexto -> {
+                alineacionesTexto(null)
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+
+    fun sumarNumeros( view: View?){
 
 
         val cambiarPantalla = Intent(this,sumaNumeros ::class.java).apply {
@@ -26,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun cambiarColoresTexto( view: View){
+    fun cambiarColoresTexto(view: View?){
 
 
         val cambiarPantalla = Intent(this,cambiarColores ::class.java).apply {
@@ -37,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun alineacionesTexto( view: View){
+    fun alineacionesTexto( view: View?){
 
 
         val cambiarPantalla = Intent(this,alinearTexto ::class.java).apply {

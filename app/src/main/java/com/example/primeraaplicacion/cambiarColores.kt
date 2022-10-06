@@ -1,5 +1,6 @@
 package com.example.primeraaplicacion
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -37,6 +38,14 @@ class cambiarColores : AppCompatActivity() {
 
         texto.setTextColor(Color.RED)
 
+    }
+
+    fun volverAtras(view: View){
+
+        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
     }
 
 
