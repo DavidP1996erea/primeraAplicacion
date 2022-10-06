@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/david/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_alinear_texto.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/david/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_cambiar_imagen.xml" value="0.1" />
+        <entry key="..\:/Users/david/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_galeria_fotos.xml" value="0.25" />
+        <entry key="..\:/Users/david/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_tamano_texto.xml" value="0.25" />
+        <entry key="..\:/Users/david/AndroidStudioProjects/primeraAplicacion/app/src/main/res/menu/menuopcion.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/dperea/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_alinear_texto.xml" value="0.33" />
         <entry key="..\:/Users/dperea/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_cambiar_colores.xml" value="0.358695652173913" />
         <entry key="..\:/Users/dperea/AndroidStudioProjects/primeraAplicacion/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -26,5 +30,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.17831813576494426" />
+      </ProjectState>
+    </option>
   </component>
 </project>

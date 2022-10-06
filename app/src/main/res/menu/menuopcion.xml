@@ -17,5 +17,17 @@
         android:title="Alineación texto"
         />
 
+    <item android:id="@+id/ejercicioGaleria"
+        android:title="Galeria fotos"
+        />
+
+    <item android:id="@+id/ejercicioTamanoTexto"
+        android:title="Cambiar tamaño texto"
+        />
+
+    <item android:id="@+id/ejercicioBombillas"
+        android:title="Encienda y apague"
+        />
+
 
 </menu>

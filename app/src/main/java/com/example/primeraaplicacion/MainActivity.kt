@@ -47,6 +47,21 @@ class MainActivity : AppCompatActivity() {
                 true
             }
 
+            R.id.ejercicioGaleria -> {
+                galeriaFotos(null)
+                true
+            }
+
+            R.id.ejercicioTamanoTexto -> {
+                tamanosTexto(null)
+                true
+            }
+
+            R.id.ejercicioBombillas -> {
+                bombillas(null)
+                true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -78,6 +93,37 @@ class MainActivity : AppCompatActivity() {
 
 
         val cambiarPantalla = Intent(this,alinearTexto ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+
+    }
+
+    fun galeriaFotos( view: View?){
+
+
+        val cambiarPantalla = Intent(this,galeriaFotos ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+
+    }
+
+
+    fun tamanosTexto( view: View?){
+
+
+        val cambiarPantalla = Intent(this,tamanoTexto ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+
+    }
+
+    fun bombillas( view: View?){
+
+
+        val cambiarPantalla = Intent(this,cambiarImagen ::class.java).apply {
 
         }
         startActivity(cambiarPantalla)
