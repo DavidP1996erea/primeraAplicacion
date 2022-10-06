@@ -12,7 +12,7 @@ class galeriaFotos : AppCompatActivity() {
 
     var asdas = arrayListOf<Int>(R.drawable.suma, R.drawable.caracol, R.drawable.gallina,
         R.drawable.gato)
-////
+/////
     fun cositas(){
 
 
