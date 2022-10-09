@@ -1,5 +1,6 @@
 package com.example.primeraaplicacion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,5 +31,13 @@ class cambiarImagen : AppCompatActivity() {
         bombillaEncendida.visibility = View.VISIBLE
 
 
+    }
+
+    fun volverAtras(view: View){
+
+        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
     }
 }

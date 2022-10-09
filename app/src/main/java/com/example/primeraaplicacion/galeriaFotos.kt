@@ -1,5 +1,6 @@
 package com.example.primeraaplicacion
 
+import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -57,6 +58,14 @@ class galeriaFotos : AppCompatActivity() {
         fotoss.visibility = View.VISIBLE
     }
 
+
+    fun volverAtras(view: View){
+
+        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+    }
 
 
 }

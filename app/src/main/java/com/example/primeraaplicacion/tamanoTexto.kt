@@ -1,5 +1,6 @@
 package com.example.primeraaplicacion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Size
@@ -29,6 +30,14 @@ class tamanoTexto : AppCompatActivity() {
 
         texto.setTextSize(TypedValue.COMPLEX_UNIT_PX,texto.textSize-1)
 
+    }
+
+    fun volverAtras(view: View){
+
+        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
     }
 
 
