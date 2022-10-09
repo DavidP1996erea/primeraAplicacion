@@ -62,6 +62,11 @@ class MainActivity : AppCompatActivity() {
                 true
             }
 
+            R.id.ejercicioChecks -> {
+                checks(null)
+                true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -131,4 +136,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun checks( view: View?){
+
+
+        val cambiarPantalla = Intent(this,checkBoxTexto ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+
+    }
 }

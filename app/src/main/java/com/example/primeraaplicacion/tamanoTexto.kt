@@ -20,7 +20,7 @@ class tamanoTexto : AppCompatActivity() {
 
         var texto = findViewById<EditText>(R.id.textoCambiar)
 
-            texto.setTextSize(TypedValue.COMPLEX_UNIT_PX,texto.textSize+1)
+            texto.setTextSize(TypedValue.COMPLEX_UNIT_PX,texto.textSize+1f)
 
     }
 
@@ -28,7 +28,7 @@ class tamanoTexto : AppCompatActivity() {
 
         var texto = findViewById<EditText>(R.id.textoCambiar)
 
-        texto.setTextSize(TypedValue.COMPLEX_UNIT_PX,texto.textSize-1)
+        texto.setTextSize(TypedValue.COMPLEX_UNIT_PX,texto.textSize-1f)
 
     }
 

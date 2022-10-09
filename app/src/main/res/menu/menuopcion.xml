@@ -29,5 +29,8 @@
         android:title="Encienda y apague"
         />
 
+    <item android:id="@+id/ejercicioChecks"
+        android:title="Experimente con los Checks"
+        />
 
 </menu>
