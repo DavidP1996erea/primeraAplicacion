@@ -1,14 +1,13 @@
 package com.example.primeraaplicacion
 
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar;
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
     }
+
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -2,35 +2,52 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item android:id="@+id/more"
+        android:icon="@drawable/menu"
+        android:title=""
+        app:showAsAction="always"
+        >
+        <menu>
+
+           <item android:id="@+id/ejercicioSumar"
+            android:icon="@drawable/pizarron"
+            android:title="A sumar"
+            />
+
+            <item android:id="@+id/ejercicioColores"
+                android:icon="@drawable/paleta"
+                android:title="Conoce los colores"
+                />
+
+            <item android:id="@+id/ejercicioTexto"
+                android:icon="@drawable/mirror"
+                android:title="Alineación texto"
+                />
+
+            <item android:id="@+id/ejercicioGaleria"
+                android:icon="@drawable/gallery"
+                android:title="Galeria fotos"
+                />
+
+            <item android:id="@+id/ejercicioTamanoTexto"
+                android:icon="@drawable/editartexto"
+                android:title="Cambiar tamaño texto"
+                />
+
+            <item android:id="@+id/ejercicioBombillas"
+                android:icon="@drawable/light"
+                android:title="Encienda y apague"
+                />
+
+            <item android:id="@+id/ejercicioChecks"
+                android:icon="@drawable/check"
+                android:title="Experimente con los Checks"
+                />
+        </menu>
+    </item>
 
 
-    <item android:id="@+id/ejercicioSumar"
-        android:title="A sumar"
 
 
-        />
-    <item android:id="@+id/ejercicioColores"
-        android:title="Conoce los colores"
-        />
-
-    <item android:id="@+id/ejercicioTexto"
-        android:title="Alineación texto"
-        />
-
-    <item android:id="@+id/ejercicioGaleria"
-        android:title="Galeria fotos"
-        />
-
-    <item android:id="@+id/ejercicioTamanoTexto"
-        android:title="Cambiar tamaño texto"
-        />
-
-    <item android:id="@+id/ejercicioBombillas"
-        android:title="Encienda y apague"
-        />
-
-    <item android:id="@+id/ejercicioChecks"
-        android:title="Experimente con los Checks"
-        />
 
 </menu>
