@@ -8,18 +8,14 @@
     tools:context=".checkBoxTexto">
 
 
-
-
-
-
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Volver"
+        android:backgroundTint="#46a5b9"
         android:onClick="volverAtras"
+        android:text="Volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"

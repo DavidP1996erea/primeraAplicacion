@@ -28,8 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="348dp"
-        android:text="+"
+        android:backgroundTint="#46a5b9"
         android:onClick="aumentar"
+        android:text="+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,11 +40,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="348dp"
         android:layout_marginEnd="108dp"
-        android:text="-"
+        android:backgroundTint="#46a5b9"
         android:onClick="dismunuir"
+        android:text="-"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
     <Button
@@ -51,8 +52,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Volver"
+        android:backgroundTint="#46a5b9"
         android:onClick="volverAtras"
+        android:text="Volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
