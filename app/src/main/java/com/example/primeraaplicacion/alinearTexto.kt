@@ -11,6 +11,7 @@ class alinearTexto : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alinear_texto)
+        supportActionBar?.hide()
     }
 
 

@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.Material3.DayNight"
     tools:context=".MainActivity">
-
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="411dp"
-        android:layout_height="643dp"
-        android:layout_marginBottom="29dp"
+        android:layout_width="410dp"
+        android:layout_height="658dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/black"
         app:srcCompat="@drawable/fondo" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

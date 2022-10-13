@@ -6,21 +6,35 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 
 class sumaNumeros : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_suma_numeros)
+        supportActionBar?.hide()
     }
 
 
 
     fun sumaTodo(): Int{
-
+        var mensaje = AlertDialog.Builder(this);
+        mensaje.setTitle("Contenido incorrecto");
+        mensaje.setMessage("Introduce algún número");
         var primerNumero = findViewById<EditText>(R.id.primerNumero)
         var segundoNumero= findViewById<EditText>(R.id.segundoNumero)
+        var sumaTotal=0
 
-        var sumaTotal = Integer.parseInt(primerNumero.text.toString())+ Integer.parseInt(segundoNumero.text.toString())
+            try{
+
+                sumaTotal = Integer.parseInt(primerNumero.text.toString())+ Integer.parseInt(segundoNumero.text.toString())
+
+            }catch (e: NumberFormatException){
+
+                mensaje.show()
+            }
+
+
 
 
         return sumaTotal;
