@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:theme="@style/Theme.Material3.DayNight"
     android:layout_height="match_parent"
+    android:background="@drawable/chekesi"
+    android:theme="@style/Theme.Material3.DayNight"
     tools:context=".checkBoxTexto">
 
 
@@ -22,54 +23,54 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/fuentePequenaTexto"
+        android:id="@+id/coloRojoTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginBottom="12dp"
-        android:text="Fuente pequeña"
-        android:onClick="fuenteDiminuta"
-        app:layout_constraintBottom_toTopOf="@+id/coloRojoTexto"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="32dp"
+        android:onClick="fuenteRoja"
+        android:text="Color rojo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuentePequenaTexto" />
 
     <CheckBox
         android:id="@+id/fuenteGrandeTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginBottom="12dp"
-        android:text="Fuente grande"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
         android:onClick="fuenteGigante"
-        app:layout_constraintBottom_toTopOf="@+id/fuentePequenaTexto"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Fuente grande"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/negritaTexto" />
 
     <CheckBox
         android:id="@+id/negritaTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginBottom="13dp"
-        android:text="Negrita"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="208dp"
         android:onClick="textoNegrita"
-        app:layout_constraintBottom_toTopOf="@+id/fuenteGrandeTexto"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Negrita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/coloRojoTexto"
+        android:id="@+id/fuentePequenaTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginBottom="161dp"
-        android:text="Color rojo"
-        android:onClick="fuenteRoja"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="20dp"
+        android:onClick="fuenteDiminuta"
+        android:text="Fuente pequeña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuenteGrandeTexto" />
 
     <TextView
         android:id="@+id/textoChecks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="68dp"
         android:text="Texto de prueba, las casas son casas. Pero \n hay casas sin casas"
         app:layout_constraintEnd_toEndOf="parent"
