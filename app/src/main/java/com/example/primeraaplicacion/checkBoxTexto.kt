@@ -23,13 +23,11 @@ class checkBoxTexto : AppCompatActivity() {
     }
 
 
-    fun volverAtras(view: View){
-
-        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
-
-        }
-        startActivity(cambiarPantalla)
-    }
+    /**
+     * Como en otros métodos, primero se crea las variables que guardarán el objeto
+     * correspondiente. Cuando el check está activdado cambia el texto a negrita, y
+     * cuando está desactivado vuelve al estilo normal
+     */
 
     fun textoNegrita(view: View){
 
@@ -47,6 +45,11 @@ class checkBoxTexto : AppCompatActivity() {
 
 
     }
+
+    /**
+     * Igual que el anterior pero cambiando la característica a cambiar, en este caso
+     * el tamaño del texto.
+     */
 
 
     fun fuenteGigante(view: View){
@@ -67,6 +70,9 @@ class checkBoxTexto : AppCompatActivity() {
     }
 
 
+    /**
+     * Igual que el anterior
+     */
     fun fuenteDiminuta(view: View) {
 
         var gigante = findViewById<CheckBox>(R.id.fuentePequenaTexto)
@@ -84,6 +90,9 @@ class checkBoxTexto : AppCompatActivity() {
     }
 
 
+    /**
+     * Cambia el color de la fuente a rojo y cuando esta desactivado vuelve al color normal
+     */
         fun fuenteRoja(view: View) {
 
             var gigante = findViewById<CheckBox>(R.id.coloRojoTexto)
@@ -98,6 +107,17 @@ class checkBoxTexto : AppCompatActivity() {
 
             }
         }
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
+    fun volverAtras(view: View){
+
+        val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {
+
+        }
+        startActivity(cambiarPantalla)
+    }
 
     }
 

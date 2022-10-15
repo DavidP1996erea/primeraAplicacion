@@ -15,6 +15,10 @@ class cambiarColores : AppCompatActivity() {
     }
 
 
+    /**
+     * Se guarda en una variable el textView para poder cambiar algunas características,
+     * en ete caso para cambiar el color a verde.
+     */
     fun cambiarAVerde(view: View){
 
         var texto  = findViewById<TextView>(R.id.textoColores)
@@ -23,6 +27,9 @@ class cambiarColores : AppCompatActivity() {
 
     }
 
+    /**
+     * Igual que el anterior pero se cambia a azul
+     */
     fun cambiarAAzul(view: View){
 
         var texto  = findViewById<TextView>(R.id.textoColores)
@@ -32,7 +39,9 @@ class cambiarColores : AppCompatActivity() {
     }
 
 
-
+    /**
+     * Igual que el anterior pero se cambia a rojo
+     */
     fun cambiarARojo(view: View){
 
         var texto  = findViewById<TextView>(R.id.textoColores)
@@ -40,6 +49,10 @@ class cambiarColores : AppCompatActivity() {
         texto.setTextColor(Color.RED)
 
     }
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
 
     fun volverAtras(view: View){
 

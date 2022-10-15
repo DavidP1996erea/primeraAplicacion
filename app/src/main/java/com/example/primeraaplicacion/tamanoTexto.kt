@@ -16,7 +16,9 @@ class tamanoTexto : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-
+    /**
+     * Cada vez que se activa este método el tamaño del texto aumenta en 1
+     */
     fun aumentar(view: View){
 
         var texto = findViewById<EditText>(R.id.textoCambiar)
@@ -25,6 +27,9 @@ class tamanoTexto : AppCompatActivity() {
 
     }
 
+    /**
+     * Cada vez que se activa este método el tamaño del texto disminuye en 1
+     */
     fun dismunuir(view: View){
 
         var texto = findViewById<EditText>(R.id.textoCambiar)
@@ -33,6 +38,10 @@ class tamanoTexto : AppCompatActivity() {
 
     }
 
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
     fun volverAtras(view: View){
 
         val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {

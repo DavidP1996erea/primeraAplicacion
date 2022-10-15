@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    /**
+     * Se crea el menú, haciendo que aparezca en pantalla. Este menú esta creado en un XML, en
+     * la carpeta menu
+     */
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
@@ -32,8 +36,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
+    /**
+     * A cada opción del menú creado en el XML, se le da una orden, ejecutan diferentes métodos
+     * que cada uno llevará a la Activivy correspondiente a la acción
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         return when (item.itemId) {
@@ -74,6 +80,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Cada uno de estos métodos llevan al activity correspondiente
+     */
 
     fun sumarNumeros( view: View?){
 

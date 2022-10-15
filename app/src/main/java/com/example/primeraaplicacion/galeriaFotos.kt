@@ -9,6 +9,10 @@ import android.widget.ImageView
 
 class galeriaFotos : AppCompatActivity() {
 
+    /**
+     * Primero se crea un arraylist con todas las fotos dentro, para poder recorrerlo y pasar
+     * de una foto a otra
+     */
     var listaFotos = arrayListOf<Int>(
         R.drawable.suma, R.drawable.caracol, R.drawable.gallina,
         R.drawable.gato
@@ -24,7 +28,10 @@ class galeriaFotos : AppCompatActivity() {
     }
 
 
-
+    /**
+     * Cada vez que se pulsa el botón que acciona este método, avanza a la siguiente imagen hasta
+     * que llega al final del array, donde se dirige a la primera imagen
+     */
     fun siguienteImagen(view: View){
 
 
@@ -44,6 +51,11 @@ class galeriaFotos : AppCompatActivity() {
 
     }
 
+    /**
+     * Igual que el método interior, pero cuando vas hacia atrás y llegas a la última foto,
+     * vas a la última foto
+     */
+
     fun atrasImagen(view: View) {
 
 
@@ -60,6 +72,10 @@ class galeriaFotos : AppCompatActivity() {
     }
 
 
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
     fun volverAtras(view: View){
 
         val cambiarPantalla = Intent(this,MainActivity ::class.java).apply {

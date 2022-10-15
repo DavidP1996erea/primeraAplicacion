@@ -16,7 +16,13 @@ class sumaNumeros : AppCompatActivity() {
     }
 
 
-
+    /**
+     * Este método retorna un entero que se usará en el método de abajo. Se crean las variables
+     * necesarias, en este caso un mensaje de texto que informará al usuario de que no
+     * introdució los datos correctos, y una variable para cada número. En caso de que todo esté
+     * correcto ambos números se sumarán. En caso de que hubiese algo mal se mostará el mensaje
+     * de error
+     */
     fun sumaTodo(): Int{
         var mensaje = AlertDialog.Builder(this);
         mensaje.setTitle("Contenido incorrecto");
@@ -35,11 +41,13 @@ class sumaNumeros : AppCompatActivity() {
             }
 
 
-
-
         return sumaTotal;
 
     }
+
+    /**
+     * Se mostrará el resultado en un TextView
+     */
 
     fun mostrarResultado(view: View){
 
@@ -48,6 +56,10 @@ class sumaNumeros : AppCompatActivity() {
 
     }
 
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
 
     fun volverAtras(view: View){
 

@@ -17,12 +17,22 @@ class cambiarImagen : AppCompatActivity() {
 
     }
 
+    /**
+     * Se guarda en una variable un objeto tipo ImageButton, que en el XML está en Gone, por lo que
+     * no se ve pero guarda su posición, al darle a la primera imagen se activa este método
+     * que hace visible la otra imagen
+     */
     fun cambiarBombillaApagada(view: View){
 
         var bombillaApagada = findViewById<ImageButton>(R.id.botonApagado)
         bombillaApagada.visibility = View.VISIBLE
 
     }
+
+    /**
+     * Con este método al pulsar la imagen button, se retira la imagen de la bombilla
+     * apagada y se vuelve visible la bombilla encendida
+     */
 
     fun cambiarBombillaEncendida(view: View){
 
@@ -33,6 +43,10 @@ class cambiarImagen : AppCompatActivity() {
 
 
     }
+
+    /**
+     * Método para volver al menu principal, cambia la actividad y ejecuta la del Main
+     */
 
     fun volverAtras(view: View){
 
